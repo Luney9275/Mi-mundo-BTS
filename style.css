@@ -1,0 +1,114 @@
+:root {
+  --verde-principal: #2d6a4f;
+  --verde-claro: #d8f3dc;
+  --morado-acento: #7b1fa2;
+  --morado-oscuro: #4a148c;
+}
+
+body {
+  background-color: var(--verde-claro);
+  font-family: 'Segoe UI', sans-serif;
+  color: #1b4332;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  background: white;
+  padding: 30px;
+  border-radius: 30px;
+  border: 4px solid var(--verde-principal);
+  box-shadow: 12px 12px 0px var(--morado-acento);
+  text-align: center;
+}
+
+.header-gif {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--morado-acento);
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+h2 { color: var(--morado-acento); border-bottom: 2px solid var(--verde-claro); padding-bottom: 5px; }
+
+/* Pomodoro Settings */
+.settings { margin: 15px 0; font-weight: bold; color: var(--verde-principal); }
+input[type="number"] { width: 45px; border-radius: 8px; border: 1px solid var(--morado-acento); padding: 5px; }
+
+.timer-display { font-size: 3.5rem; font-weight: bold; color: var(--verde-principal); margin: 10px 0; }
+
+button {
+  background-color: var(--morado-acento);
+  color: white; border: none; padding: 10px 20px;
+  border-radius: 20px; cursor: pointer; font-weight: bold; margin: 5px;
+}
+
+button:hover { background-color: var(--morado-oscuro); transform: scale(1.1); }
+
+.quote-box {
+  margin-top: 25px; padding: 15px;
+  background: #f3e5f5; border-radius: 15px;
+  border-left: 8px solid var(--morado-acento);
+  font-style: italic; color: var(--morado-oscuro);
+}
+
+/* Contenedor principal del footer */
+#contact {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 3px double var(--verde-principal);
+}
+
+/* Creamos las dos columnas */
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: left; /* Alineamos el texto a la izquierda para las listas */
+}
+
+.link-column {
+  flex: 1; /* Hace que ambas columnas ocupen el mismo espacio */
+}
+
+.link-column h3 {
+  font-size: 1rem;
+  color: var(--verde-principal);
+  margin-bottom: 10px;
+  text-transform: none;
+  border-bottom: 2px solid var(--verde-claro);
+}
+
+/* Quitamos los puntos de la lista y el margen */
+.clean-list {
+  list-style: none;
+  padding: 0;
+}
+
+.clean-list li {
+  margin-bottom: 8px;
+}
+
+.clean-list a {
+  text-decoration: none;
+  color: var(--morado-oscuro);
+  font-size: 0.85rem;
+  transition: color 0.3s, padding-left 0.3s;
+}
+
+/* Efecto al pasar el mouse por los links */
+.clean-list a:hover {
+  color: var(--verde-principal);
+  padding-left: 5px; /* Pequeño movimiento a la derecha */
+}
+
+/* Responsivo: Si la pantalla es pequeña, las columnas se apilan */
+@media (max-width: 480px) {
+  .footer-grid {
+    flex-direction: column;
+  }
+}

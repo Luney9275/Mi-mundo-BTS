@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Mundo & BTS 💜</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Mi mundo & BTS 💜</h1>
+    <p>Bienvenidos a mi rincón especial, donde estoy practicando la creación de páginas web a la vez que hablo de BTS e intento estudiar... ajajaja!</p>
+  </header>
+
+  <section id="about">
+    <h2>Sobre mí & Mi bias <span>✨</span></h2>
+    <p>¡Hola! Soy <strong>Luney</strong>, y escucho a BTS desde 2015. <br>
+      Los conocí con HYYH (parte 1, en abril) porque me los hizo escuchar una amiga, pero no fue hasta la parte 2 (en noviembre) que me hice fan. <br> <br>
+      En un principio me llamó la atención Jungkook, porque le encontré parecido con Seiya Kou (Sailor Moon), pero al tiempo me atrapó Suga por su historia... Pero luego me hechizó Taehyung, y hasta el día de hoy, sigo hechizada. 💜</p>
+  </section>
+
+  <section id="playlist">
+    <h2>Mi playlist de Spotify 🎵</h2>
+     <p>Les dejo esta playlist que hice para hacer stream a ARIRANG pero como también quiero escuchar a V, me la creé.</p>
+    <div class="playlist-wrapper">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1mUJuY7XcLiuifK2rDVSNT?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <section id="pomodoro">
+    <h2>Mini Pomodoro ⏳</h2>
+    <div class="timer-display" id="timer">25:00</div>
+    
+    <div class="settings">
+      <input type="number" id="workInput" value="25" min="1" max="60"> min / 
+      <input type="number" id="breakInput" value="5" min="1" max="25"> min
+    </div>
+
+    <div class="controls">
+      <button id="btnStart" onclick="toggleTimer()">Empezar</button>
+      <button onclick="resetTimer()">Reiniciar</button>
+    </div>
+    <p id="timer-label">¡A estudiar con Bangtan!</p>
+  </section>
+  
+  <div id="quote-display" class="quote-box">"Teamwork makes the dream work." - BTS</div>
+
+  <footer id="contact">
+    <div class="footer-grid">
+      <div class="link-column">
+        <h3>Mis redes ✨</h3>
+        <ul class="clean-list">
+          <li><a href="https://x.com/colo927" target="_blank">Twitter 🐦</a></li>
+          <li><a href="https://www.instagram.com/luney9275" target="_blank">Instagram 📸</a></li>
+          <li><a href="https://www.tiktok.com/@luney9275" target="_blank">TikTok 📱</a></li>
+          <li><a href="https://open.spotify.com/user/21howjfnnhf55xqszxmjob46y?si=71517d17ac0346e5" target="_blank">Mi Spotify 🎧</a></li>
+        </ul>
+      </div>
+      <div class="link-column">
+        <h3>BTS Oficial 💜</h3>
+        <ul class="clean-list bts-links">
+          <li><a href="https://ibighit.com/en/bts/profile/" target="_blank">Página Oficial 🌐</a></li>
+          <li><a href="https://open.spotify.com/intl-es/artist/3Nrfpe0tUJi4K4DXYWgMUX?si=JGLdo-fDQrOSuJGNTIicfQ" target="_blank">Spotify BTS 🎵</a></li>
+          <li><a href="https://x.com/BTS_twt" target="_blank">Twitter 🐦</a></li>
+          <li><a href="https://instagram.com/bts.bighitofficial" target="_blank">Instagram 📸</a></li>
+          <li><a href="https://tiktok.com/@bts_official_bighit" target="_blank">TikTok 📱</a></li>
+          <li><a href="https://weverse.io/bts/highlight" target="_blank">Weverse 🌌</a></li>
+          <li><a href="https://facebook.com/bangtan.official" target="_blank">Facebook 👥</a></li>
+          <li><a href="https://www.youtube.com/@BTS" target="_blank">YouTube ▶️</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <audio id="alarm-sound" src="https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3"></audio>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
